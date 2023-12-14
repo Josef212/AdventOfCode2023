@@ -1,0 +1,52 @@
+use aoc_runner_derive::{aoc_generator, aoc};
+
+#[aoc_generator(dayX)]
+fn input_generator(input: &str) -> Vec<u32> {
+    vec![0]
+}
+
+#[aoc(dayX, part1)]
+pub fn part1(input: &[u32]) -> i32 {
+    0
+}
+
+#[aoc(dayX, part2)]
+pub fn part2(input: &[u32]) -> i32 {
+    0
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    const TEST_DATA: &str = r#"
+"#;
+
+    const PART1_RESULT: i32 = 0;
+    const PART2_RESULT: i32 = 0;
+
+    #[test]
+    fn test_parser() {
+        let parsed = input_generator(TEST_DATA);
+        let ret = vec![
+        ];
+
+        assert_eq!(parsed, ret);
+    }
+
+    #[test]
+    fn test_part1() {
+        let parsed = input_generator(TEST_DATA);
+        let result = part1(&parsed);
+
+        assert_eq!(result, PART1_RESULT);
+    }
+
+    #[test]
+    fn test_part2() {
+        let parsed = input_generator(TEST_DATA);
+        let result = part2(&parsed);
+
+        assert_eq!(result, PART2_RESULT);
+    }
+}
