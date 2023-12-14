@@ -1,0 +1,57 @@
+use aoc_runner_derive::{aoc_generator, aoc};
+
+type ChallangeData = Data;
+type OutputData = u32;
+
+#[aoc_generator(day6)]
+fn input_generator(input: &str) -> ChallangeData {
+    todo!()
+}
+
+#[aoc(day6, part1)]
+pub fn part1(input: &ChallangeData) -> OutputData {
+    0
+}
+
+#[aoc(day6, part2)]
+pub fn part2(input: &ChallangeData) -> OutputData {
+    0
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    const TEST_DATA: &str = r#"
+"#;
+
+    const PART1_RESULT: OutputData = 0;
+    const PART2_RESULT: OutputData = 0;
+
+    #[test]
+    fn test_parser() {
+        let parsed = input_generator(TEST_DATA);
+        let ret = ChallangeData::default();
+
+        assert_eq!(parsed, ret);
+    }
+
+    #[test]
+    fn test_part1() {
+        let parsed = input_generator(TEST_DATA);
+        let result = part1(&parsed);
+
+        assert_eq!(result, PART1_RESULT);
+    }
+
+    #[test]
+    fn test_part2() {
+        let parsed = input_generator(TEST_DATA);
+        let result = part2(&parsed);
+
+        assert_eq!(result, PART2_RESULT);
+    }
+}
+
+#[derive(Debug, PartialEq, Eq, Default)]
+pub struct Data;
