@@ -1,17 +1,20 @@
 use aoc_runner_derive::{aoc_generator, aoc};
 
+type ChallangeData = Data;
+type OutputData = u32;
+
 #[aoc_generator(dayX)]
-fn input_generator(input: &str) -> Vec<u32> {
-    vec![0]
+fn input_generator(input: &str) -> ChallangeData {
+    todo!()
 }
 
 #[aoc(dayX, part1)]
-pub fn part1(input: &[u32]) -> i32 {
+pub fn part1(input: &ChallangeData) -> OutputData {
     0
 }
 
 #[aoc(dayX, part2)]
-pub fn part2(input: &[u32]) -> i32 {
+pub fn part2(input: &ChallangeData) -> OutputData {
     0
 }
 
@@ -22,14 +25,13 @@ mod test {
     const TEST_DATA: &str = r#"
 "#;
 
-    const PART1_RESULT: i32 = 0;
-    const PART2_RESULT: i32 = 0;
+    const PART1_RESULT: OutputData = 0;
+    const PART2_RESULT: OutputData = 0;
 
     #[test]
     fn test_parser() {
         let parsed = input_generator(TEST_DATA);
-        let ret = vec![
-        ];
+        let ret = ChallangeData::default();
 
         assert_eq!(parsed, ret);
     }
@@ -50,3 +52,6 @@ mod test {
         assert_eq!(result, PART2_RESULT);
     }
 }
+
+#[derive(Debug, PartialEq, Eq, Default)]
+pub struct Data;
